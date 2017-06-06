@@ -1,0 +1,47 @@
+<ion-view view-title='Chat Box'>
+	<ion-header title="home" class="bar bar-header chat-header">
+        <a class="button button-icon ion-arrow-left-c" ng-click="back()" style='color:white;'></a>
+  <h1 class="title header-maps">
+  			What's On Your Mood???</h1>
+</ion-header>
+    <div class="add-bg">
+	<form name="chatboxForm" class="add-bg">
+	<ion-list class="custom-search-chatbox" >
+			<label class="item item-input">
+   				 <input type="text" placeholder="Name" ng-model='data.username' required>
+  			</label>
+
+			<label class="item item-input">
+    			<textarea placeholder="Message" ng-model='data.comment' required></textarea>
+  			</label>
+
+			<button class="button button-block button-dark send" ng-disabled="chatboxForm.$invalid" ng-click='send()'>
+  				Send
+			</button>
+		</ion-list>
+		</form>
+		</div>
+	<ion-content class="content-stable app-bg" has-bouncing="false" ng-init="socketInit()">
+		
+<!--<ion-scroll class='row-66'>
+<div class="row" ng-repeat='message in messages'>
+				<div class="col">
+					<div class="item item-text-wrap">
+						{{message.name}} : {{message.comment}}
+					</div>
+				</div>
+			</div>
+		
+
+		</ion-scroll> -->
+		<div class="chatbox-list-item">
+	  <ion-list >
+      <ion-item ng-repeat='message in messages' class="item-text-wrap margin-top-item" >
+				{{message.name}} : {{message.text}}
+
+			</ion-item>
+    </ion-list>
+    </div>
+
+	</ion-content>
+</ion-view>

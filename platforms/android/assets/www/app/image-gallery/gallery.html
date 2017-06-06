@@ -1,0 +1,52 @@
+<ion-view view-title='Gallery' class='pane'>
+ <ion-header title="home" class="bar bar-header app-header">
+        <a class="button button-icon ion-arrow-left-c" ng-click="galCtrl.back()" style='color:white;'></a>
+  <h1 class="title header-maps">
+  			News Feed</h1>
+</ion-header>
+	<ion-content class="app-bg" ng-init="galCtrl.loadImages()">
+         <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="galCtrl.loadImages()">
+  </ion-refresher>
+		<!--<div class="row" ng-repeat="image in galCtrl.images">-->
+			<!--<div class="col" ng-show="$index % 2== 0">
+				<img ng-src="{{image.media.m}}" width="100%" ui-sref='tabs.gallery.galleryzoom({index: image.media.m})'
+				/>
+				
+			</div>-->
+			<!--<div class="col col-50" ng-show="$index % 2 !== 0">
+				<img ng-src="{{image.media.m}}" width="100%" ui-sref='tabs.gallery.galleryzoom({index: image.media.m})'
+				/>
+			</div>-->
+			<!--<div class="col col-25" ng-if="$index + 2 < galCtrl.images.length">
+				<img ng-src="{{galCtrl.images[$index + 2].src}}" width="100%" />
+			</div>
+			<div class="col col-25" ng-if="$index + 3 < galCtrl.images.length">
+				<img ng-src="{{galCtrl.images[$index + 3].src}}" width="100%" />
+			</div>-->
+			
+				
+				
+			<div class="list card"  ng-repeat="image in galCtrl.arrayImages">
+
+					<!--<div class="item item-avatar">
+						<img src="mcfly.jpg">
+						<h2>Marty McFly</h2>
+						<p>November 05, 1955</p>
+					</div>-->
+
+					<div class="item item-body">
+						<img ng-src="{{image.link}}" width="100%" ui-sref='galleryzoom({index: image.link})'
+							/>
+						<p>
+						<h3> {{image.title}}</h3>
+						</p>
+					</div>
+
+					</div>
+					
+		</div>
+
+	</ion-content>
+</ion-view>

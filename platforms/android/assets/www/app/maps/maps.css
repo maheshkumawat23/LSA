@@ -1,0 +1,26 @@
+table{
+    background-color: white;
+}
+
+.adp-summary{
+    background-color: white;
+}
+.map-div{
+    width: 100%;
+     float:left; 
+     height: 50%;
+    
+}
+.direction-show{
+    width: 100%;
+    float:left;
+    height: 100%; 
+    overflow: auto;
+   padding: 0px 0px;
+  
+}
+.header-maps{
+    color:white;
+    margin-top:2% !important;
+    font-size:21px !important;
+}

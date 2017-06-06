@@ -1,0 +1,238 @@
+.app-bg
+{
+	/*background-color:#4286f4;*/
+	background: linear-gradient(to top, #003f75,#0087d3);
+	margin-top: 15%;
+}
+.app-header
+{
+	background: linear-gradient(to top, #003f75,#0087d3);
+	height:10%;
+}
+.app-header a
+{
+	background-color: rgba(0,0,0,0) !important;
+	margin-top:2%;
+	color:white;
+}
+.header-image
+{
+	width:80%;
+}
+.loc-icon:before
+{
+	font-size: 40px !important;
+	color: white !important;
+}
+.header-title
+{
+	margin-top: 4% !important;
+    text-align: left !important;
+    margin-left: 6% !important;
+}
+.home-text-small
+{
+	color: white;
+	text-align: center;
+	margin-top: 35px !important;
+	font-size: 19px;
+}
+.home-text-small-date{
+	color: white;
+	text-align: center;
+	font-size: 19px;
+}
+.home-text-big
+{
+	color: white;
+	text-align: center;
+	margin-top: 50px !important;
+	font-size: 27px;
+}
+.block1
+{
+	position: absolute;
+	top:0;
+	bottom:55%;
+	left:4%;
+	right: 100%;
+	background-color: green;
+	border-radius:5%;
+	margin-bottom: 10%;
+	background: linear-gradient(to top right, #6973f6,#ff68f8);
+	padding-left: 0 !important;
+	padding-bottom: 5px;
+	height: 55%;
+	width:94%;
+}
+.block2
+{
+	position: absolute;
+	top:57%;
+	bottom: 100%;
+	left:4%;
+	right: 100%;
+	background-color: pink;
+	border-radius:5%;
+	background: linear-gradient(to top right, #119f43,#67d49c);
+	padding: 0 !important;
+	height: 40%;
+	width:94%;
+}
+.block3
+{
+	position: absolute;
+	top:0;
+	bottom:40%;
+	left:2%;
+	right: 100%;
+	background-color: pink;
+	border-radius:5%;
+	margin-bottom: 10%;
+	background: linear-gradient(to top right, #0c9ab4,#45bbfe);
+	padding: 0 !important;
+	height: 40%;
+	width:94%;
+}
+.block4
+{
+	position: absolute;
+	top:42%;
+	bottom: 100%;
+	left:2%;
+	right: 100%;
+	background-color: green;
+	border-radius:5%;
+	background: linear-gradient(to top right, #de4e83,#ffa96a);
+	padding: 0 !important;
+	height: 55%;
+	width:94%;
+}
+.no-margin
+{
+	margin-top:0px !important;
+}
+.no-padding
+{
+	padding:0 !important;
+}
+.space
+{
+	height: 20px;
+}
+.blocks-container
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 30%;
+}
+.block1-bg
+{
+	background: url("../../assets/images/Award_bg.png");
+	width: 100%;
+	background-position: bottom left;
+	background-size: 75%;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+    border-radius: 10px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.block2-bg
+{
+	background: url("../../assets/images/conversation_bg.png");
+	width: 100%;
+	background-position: bottom left;
+	background-size: 75%;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+    border-radius: 10px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.block3-bg
+{
+	background: url("../../assets/images/Guest.png");
+	width: 100%;
+	background-position: bottom left;
+	background-size: 75%;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+    border-radius: 10px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.block4-bg
+{
+	background: url("../../assets/images/rss_bg.png");
+	width: 100%;
+	background-position: bottom left;
+	background-size: 75%;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+    border-radius: 10px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.block-image
+{
+	height: 70%;
+
+}
+.block1-sub img
+{
+	opacity: 1;
+}
+.col-block1
+{
+	position: absolute;
+	left:0;
+	right: 50%;
+	height: 100%;
+	width:50%;
+	top:0;
+	bottom:100%;
+}
+.col-block2
+{
+	position: absolute;
+	left:50%;
+	right: 100%;
+	top:0;
+	bottom:100%;
+	height: 100%;
+	width:50%;
+}
+.block-sub
+{
+	width:100%;
+	height: 50%;
+	position: absolute;
+	left:0;
+	top:25%;
+	text-align: center;
+}
+.block-text
+{
+	margin-top: 0;
+	color: white;
+	font-weight: 400;
+}

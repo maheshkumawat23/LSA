@@ -1,0 +1,42 @@
+<ion-modal-view view-title="Awards">
+    <ion-header title="home" class="bar bar-header app-header">
+        <a class="button button-icon ion-arrow-left-c" ng-click="closeModal()" style='color:white;'></a>
+  <h1 class="title custom-title-modal">
+            {{data.name}}</h1>
+</ion-header>
+    <ion-content class="app-bg">
+
+       <!--<div class="list card">
+
+            
+
+            <div class="item item-body">
+                <img class="full-image" ng-src="{{data.imgsrc}}">
+               
+            </div>
+			<div class="item">
+                <h2 style="text-align:center"><b>{{name}}</b></h2>
+            </div>
+
+        </div>-->
+        <div class="list card">
+
+  <div class="item item-avatar">
+    <img  ng-src="{{data.imgsrc}}">
+    <h2>{{data.name}}</h2>
+    <p>{{data.dob}}</p>
+  </div>
+
+  <div class="item item-body">
+    <!--<img class="full-image" ng-src="{{data.imgsrc}}">-->
+    <p class="custom-paragraph">
+      {{data.text}}
+    </p>
+  </div>
+
+</div>
+
+
+    </ion-content>
+
+</ion-modal-view>

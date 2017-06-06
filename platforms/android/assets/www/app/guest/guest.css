@@ -1,0 +1,55 @@
+.header-normal-title
+{
+	color: white;
+	margin-top: 2.5% !important;
+}
+.back-icon:before
+{
+	vertical-align: middle;
+}
+.guest-image
+{
+	width:100%;
+}
+.background.scroll-content{
+    background:url('../../assets/guest/Who.jpg') no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin:auto;
+    z-index:2;
+}
+.guest-title
+{
+	font-size: 22px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to top right, #de4e83,#ffa96a);
+    /*background: linear-gradient(to top right, #0c9ab4,#45bbfe);*/
+    margin-top: 2%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.guest-container
+{
+	color: white;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.6),rgba(80,80,80,0.4));
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: justify;
+}
+.guest-topic
+{
+	 color: white;
+    font-size: 18px;
+    padding: 3px;
+    padding-top: 10px;
+    text-align: center;
+}
+.guest-guess{
+    margin-top: 19em !important;
+    text-align: center !important;
+    color: white !important;
+}

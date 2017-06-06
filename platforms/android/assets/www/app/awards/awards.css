@@ -1,0 +1,47 @@
+
+.item.item-trns-awards {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: white; 
+    padding : 0;
+}
+
+
+
+.item.item-trns-awards * {
+    color: white;
+}
+
+
+.item-divider.item-trns *{
+    border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+    padding: 2%;
+}
+
+.customListView{
+	border-width:none;
+	
+}
+.custom-search{
+	position:absolute;
+	z-index:2000;
+	margin-top:15%;
+}
+.margin-top-list>.list{
+	margin-top:40px !important;
+}
+.details-forward-icon{
+	float:right !important;
+	font-size: 20px;
+	font-weight: bold;
+}
+.custom-title-modal{
+	color: white;
+    margin-top: 2% !important;
+    font-size: 18px !important;
+}
+.custom-paragraph{
+	text-align: justify;
+}

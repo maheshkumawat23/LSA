@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+
+	<!-- ionic Essentials -->
+
+	<link rel="stylesheet" type="text/css" href="ionic/css/ionic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	 <link rel="stylesheet" type="text/css" href="css/ionic.segment.css">
+	 <link rel="manifest" href="/manifest.json">
+	
+
+	<!-- ChatBox CSS-->
+	<link rel="stylesheet" type="text/css" href="app/chatbox/chatbox.css">
+	<!-- Home CSS-->
+    <link rel="stylesheet" type="text/css" href="app/home/home.css">
+	<!-- Gallery CSS -->
+	<link rel="stylesheet" type="text/css" href="app/image-gallery/gallery.css">
+
+	<!-- Awards CSS-->
+	<link rel="stylesheet" type="text/css" href="app/awards/awards.css">
+
+	<!-- Maps CSS -->
+	<link rel="stylesheet" type="text/css" href="app/maps/maps.css">
+
+	<!-- Gallery Zoom CSS-->
+	<link rel="stylesheet" type="text/css" href="app/gallery-zoom/galleryzoom.css">
+	<link rel="stylesheet" type="text/css" href="app/guest/guest.css">
+    
+</head>
+
+<body>
+	<div ng-app="starter">
+
+		<ion-nav-view> </ion-nav-view>
+
+	</div>
+<script type="text/javascript" src="ionic/js/ionic.bundle.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/ng-cordova.js"></script>
+    <script src="js/ionic.segment.js"></script>
+    <!--firebase -->
+    <script type="text/javascript" src="js/firebase.js"></script>
+	<!-- <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDWTxpmEpFCZ__m1SBOv_pMG_9EwG090Tc",
+	    authDomain: "lsawards-8072d.firebaseapp.com",
+	    databaseURL: "https://lsawards-8072d.firebaseio.com",
+	    projectId: "lsawards-8072d",
+	    storageBucket: "lsawards-8072d.appspot.com",
+	    messagingSenderId: "592851813166"
+	  };
+	  firebase.initializeApp(config);
+	  const messaging = firebase.messaging();
+	</script> -->
+	<!-- Angular Config files -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src='js/app-config.js'></script>
+	<script src="js/angular-flickr-api-factory.js"></script>
+
+
+	<!-- ng Map -->
+	<script type="text/javascript" src="node_modules/ngmap/build/scripts/ng-map.min.js"></script>
+
+	<!-- Google maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjMCnVEGZENsXZIF8NIK1oQIU7IlyqwXU"></script>
+
+	<!-- Services -->
+	<script type="text/javascript" src='app/services/scoreboard.service.js'></script>
+    <script type="text/javascript" src='app/services/getDeviceInfo.js'></script>
+	<script type="text/javascript" src='app/services/showPopOver.js'></script>
+	<!-- Controllers -->
+	<script type="text/javascript" src='app/home/home.controller.js'></script>
+	<script type="text/javascript" src='app/awards/awards.controller.js'></script>
+	<script type="text/javascript" src='app/awarddetails/awarddetails.controller.js'></script>
+	<script type="text/javascript" src='app/chatbox/chatbox.controller.js'></script>
+	<script type="text/javascript" src='app/maps/maps.controller.js'></script>
+	<script type="text/javascript" src='app/image-gallery/gallery.controller.js'></script>
+	<script type="text/javascript" src='app/gallery-zoom/galleryzoom.controller.js'></script>
+	<script type="text/javascript" src='app/guest/guest.controller.js'></script>
+	<!-- Chat Socket IO -->
+	<script type="text/javascript" src='js/socket.io.js'></script>
+
+</body>
+
+</html>

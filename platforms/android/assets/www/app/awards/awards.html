@@ -1,0 +1,141 @@
+<ion-view view-title="Awards">
+	<ion-header title="home" class="bar bar-header app-header">
+        <a class="button button-icon ion-arrow-left-c" ng-click="back()" style='color:white;'></a>
+  <h1 class="title header-maps">
+  			Awardees</h1>
+</ion-header>
+<ion-segment ng-model="categories" full="true"  dark class="custom-search">
+    <ion-segment-button value="thirtyFiveYrs">
+      35 Yrs
+    </ion-segment-button>
+    <ion-segment-button value="thirtyYrs">
+      30 Yrs
+    </ion-segment-button>
+    <ion-segment-button value="twentyFiveYrs">
+      25 Yrs
+    </ion-segment-button>
+	<ion-segment-button value="twentyYrs">
+      20 Yrs
+    </ion-segment-button>
+    <ion-segment-button value="fifteenYrs">
+      15 Yrs
+    </ion-segment-button>
+    <ion-segment-button value="tenYrs">
+      10 Yrs
+    </ion-segment-button>
+  </ion-segment>
+<ion-content has-bouncing="false" class="app-bg" >
+
+ 
+<div ng-switch="categories">
+  
+   <ion-list ng-switch-when="thirtyFiveYrs"  class="margin-top-list">
+      <ion-item class=' card margin-top-list' ng-repeat='awardee in thirtyFiveYearsExperienced' ng-click="showModalAwardee(awardee)" >
+				<div class="item item-body">
+					<img class="full-image" ng-src="{{awardee.image}}">
+				</div>
+			<div class="item">
+                <h2 style="text-align:center"><b>{{awardee.name}}</b>
+                 <span class="details-forward-icon"><i class="icon icon-right ion-ios-arrow-forward"></i></span>
+                </h2>
+
+            </div>
+
+			</ion-item>
+    </ion-list>
+
+    <ion-list ng-switch-when="thirtyYrs"  class="margin-top-list">
+      <ion-item class=' card' ng-repeat='awardee in thirtyYearsExperienced' ng-click="showModalAwardee(awardee)">
+				<div class="item item-body">
+					<img class="full-image" ng-src="{{awardee.image}}">
+				</div>
+			<div class="item">
+                <h2 style="text-align:center"><b>{{awardee.name}}</b>
+                <span class="details-forward-icon"><i class="icon icon-right ion-ios-arrow-forward"></i></span></h2>
+            </div>
+
+			</ion-item>
+    </ion-list>
+    
+    <ion-list ng-switch-when="twentyFiveYrs" class="margin-top-list">
+		<ion-item class='card' ng-repeat='awardee in twentyFiveYearsExperienced' ng-click="showModalAwardee(awardee)">
+				<div class="item item-body">
+					<img class="full-image" ng-src="{{awardee.image}}">
+				</div>
+			<div class="item">
+                <h2 style="text-align:center"><b>{{awardee.name}}</b>
+                	<span class="details-forward-icon"><i class="icon icon-right ion-ios-arrow-forward"></i></span>
+                </h2>
+            </div>
+
+		</ion-item>
+    </ion-list>
+	<ion-list ng-switch-when="twentyYrs" class="margin-top-list">
+      <ion-item ng-repeat='awardee in twentyYearsExperienced' class="customListView">
+			<h2 style="text-align:center"><b>{{awardee.name}}</b></h2>
+		</ion-item>
+    </ion-list>
+	<ion-list ng-switch-when="fifteenYrs" class="margin-top-list">
+      <ion-item ng-repeat='awardee in fifteenYearsExperienced'>
+			<h2 style="text-align:center"><b>{{awardee.name}}</b></h2>
+		</ion-item>
+    </ion-list>
+	<ion-list ng-switch-when="tenYrs" class="margin-top-list">
+      <ion-item ng-repeat='awardee in tenYearsExperienced'>
+			<h2 style="text-align:center"><b>{{awardee.name}}</b></h2>
+		</ion-item>
+    </ion-list>
+  
+  </div>
+  </ion-content>
+	<!--<ion-content>
+		<ion-list>
+
+
+			<ion-item-divider class='item-divider item-trns'>
+				<h3>30 Year Award</h3>
+			</ion-item-divider>
+
+			<ion-item class=' card item-thumbnail-left' ng-repeat='awardee in awardees' ui-sref='tabs.awards.awarddetails({name: awardee.name})'>
+
+				<img ng-src="{{imgsrc}}">
+				<h2>{{awardee.name}}</h2>
+				<p>{{awardee.desc}}</p>
+
+			</ion-item>
+
+			<ion-item-divider class='item-divider item-trns'>
+				<h3>20 Year Award</h3>
+			</ion-item-divider>
+
+			<ion-item class=" card item-thumbnail-left" ng-repeat='awardee in awardees' ui-sref='tabs.awards.awarddetails({name: awardee.name})'>
+				<img ng-src="{{imgsrc}}">
+				<h2>{{awardee.name}}</h2>
+				<p>{{awardee.desc}}</p>
+			</ion-item>
+
+			<ion-item-divider class='item-divider item-trns'>
+				<h3>15 Year Award</h3>
+			</ion-item-divider>
+
+			<ion-item class=" card item-thumbnail-left" ng-repeat='awardee in awardees' ui-sref='tabs.awards.awarddetails({name: awardee.name})'>
+				<img ng-src="{{imgsrc}}">
+				<h2>{{awardee.name}}</h2>
+				<p>{{awardee.desc}}</p>
+			</ion-item>
+
+
+			<ion-item-divider class='item-divider item-trns'>
+				<h3>10 Year Award</h3>
+			</ion-item-divider>
+
+			<ion-item class=" card item-thumbnail-left" ng-repeat='awardee in awardees' ui-sref='tabs.awards.awarddetails({name: awardee.name})'>
+				<img ng-src="{{imgsrc}}">
+				<h2>{{awardee.name}}</h2>
+				<p>{{awardee.desc}}</p>
+			</ion-item>
+
+		</ion-list>
+	</ion-content>
+-->
+</ion-view>
